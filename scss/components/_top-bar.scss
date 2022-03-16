@@ -1,0 +1,25 @@
+a.top-bar{
+    font-size: 18px;
+    margin-top: 0px;
+    padding-right: 4px;
+}
+
+a.top-bar.logo{
+    padding-right: 6px;
+}
+
+.top-bar{
+    list-style:none;
+    padding-left: 0%;
+    display: inline-block;
+    margin-top: 0%;
+}
+
+.top-bar-item{
+    display: inline-block;
+    position: relative;
+}
+
+.menu{
+    justify-content: flex-end;
+}

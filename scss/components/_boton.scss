@@ -1,0 +1,71 @@
+.boton-soft-white{
+    background-color: transparent;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: $border solid $black;
+    border-radius: 100px;
+    transition: $tran-time;
+}
+.boton-soft-white:hover{
+    background-color: $black;
+    color: $white;
+}
+.boton-soft-white:active{
+    background-color: $pop;
+    border: $border solid $pop;
+    color: $white;
+}
+
+
+.boton-soft-black{
+    background-color: transparent;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: $border solid $black;
+    border-radius: 100px;
+    transition: $tran-time;
+}
+.boton-soft-black:hover{
+    background-color: $black;
+    color: $white;
+}
+.boton-soft-black:active{
+    background-color: $pop;
+    border: $border solid $pop;
+    color: $white;
+}
+
+
+.boton-hard{
+    background-color: $pop;
+    color: $white;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: $border solid $pop;
+    border-radius: 100px;
+    transition: $tran-time;
+}
+.boton-hard:hover{
+    background-color: $dark-pink;
+    border: $border solid $dark-pink;
+}
+.boton-hard:active{
+    background-color: $black;
+    border: $border solid $black;
+}
+
+input{
+    background-color: transparent;
+    font-size: 15px;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: $border solid $black;
+    border-radius: 100px;
+}
+::placeholder{
+    color: $black;
+}

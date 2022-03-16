@@ -1,0 +1,43 @@
+/*----- COLOR -----*/
+
+$red: #FA4C4B;
+$pink: #FFF6FB;
+$dark-pink: #F1AFD0;
+$black: #222222;
+$white: #FFFFFF;
+
+$web-back: $pink;
+$card-back: $white;
+$text: $black;
+$pop: $red;
+
+.pop{
+    color: $pop;
+}
+
+
+/*----- FONT STYLE -----*/
+
+$reg: 400; /*regular*/
+$bold: 600; /*semi bold*/
+$font: 'Archivo', sans-serif;
+$logo: 'Space Grotesk', sans-serif;
+
+.logo{
+    font-family: $logo;
+    font-weight: $reg;
+}
+
+.light{
+    font-weight: $reg;
+}
+
+
+/*----- Border -----*/
+
+$border: 1.5px;
+
+
+/*----- Transition time -----*/
+
+$tran-time: .2s;

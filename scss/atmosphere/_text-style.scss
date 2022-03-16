@@ -1,0 +1,48 @@
+a{
+    text-decoration: none;
+    color: $text;
+    font-family: $font;
+    font-weight: $reg;
+    font-size: auto;
+}
+
+.link-in-text{
+    text-decoration: underline;
+}
+
+p{
+    font-family: $font;
+    font-weight: $reg;
+    font-size: 14px;
+    color: $text;
+}
+
+h2{
+    font-family: $font;
+    font-weight: $bold;
+    font-size: 25px;
+    color: $text;
+}
+
+h3{
+    font-family: $font;
+    font-weight: $bold;
+    font-size: 40px;
+    color: $text;
+}
+
+h4{
+    font-family: $font;
+    font-weight: $bold;
+    font-size: 85px;
+    line-height: 69px;
+    color: $text;
+}
+
+h5{
+    font-family: $font;
+    font-weight: $bold;
+    font-size: 14px;
+    color: $text;
+}
+
