@@ -1,0 +1,41 @@
+.pro-intro{
+    margin-top: 150px;
+    margin-bottom: 350px;
+}
+
+/* móvil */
+
+.pro-card{
+    margin-top: 20px;
+    padding-bottom: 33px;
+    background-color: $white;
+    border: $border solid $black;
+    border-radius: $radius;
+}
+
+.pro-card-img{
+    height: 250px;
+    border-radius: $radius $radius 0px 0px;
+    border-bottom: $border solid $black;
+}
+
+.pro-card-info{
+    padding: 15px;
+}
+
+.pro-card-header{
+    display: inline;
+}
+.pro-card-header-name, .pro-card-header-type{ 
+    margin: 0px;
+    width: 50%;
+}
+.pro-card-header-type{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pro-card-link{
+    position: relative;
+    float: right;
+}

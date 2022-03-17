@@ -1,11 +1,31 @@
 footer{
     background-color: $pop;
-    padding: 3px;
-    width: 100%;
+    padding: 10px;
+    width: calc(100% + 1em);
     position: relative;
-    bottom: 0%;
+    bottom: -1em;
+    left:-1em;
+    margin-top: 100px;
 }
 
-.p-footer{
-    padding: 3px;
+p.footer{
+    color: $white;
+    padding-left: 10px;
+}
+a.footer{
+    color: $white;
+}
+
+.footer-links{
+    padding-right: 12px;
+}
+.insta{
+    position: relative;
+    width: 25px;
+    bottom: -1.4px;
+}
+.behance{
+    position: relative;
+    width: 20px;
+    top: -1.4px;
 }

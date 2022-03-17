@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*----- COLOR -----*/
 .pop {
   color: #FA4C4B;
@@ -51,8 +52,6 @@ a.top-bar.logo {
 
 html {
   background-color: #FFF6FB;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 body {
@@ -112,7 +111,7 @@ h5 {
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1.5px solid #222222;
+  border: 1px solid #222222;
   border-radius: 100px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -125,7 +124,7 @@ h5 {
 
 .boton-soft-white:active {
   background-color: #FA4C4B;
-  border: 1.5px solid #FA4C4B;
+  border: 1px solid #FA4C4B;
   color: #FFFFFF;
 }
 
@@ -134,7 +133,7 @@ h5 {
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1.5px solid #222222;
+  border: 1px solid #222222;
   border-radius: 100px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -147,7 +146,7 @@ h5 {
 
 .boton-soft-black:active {
   background-color: #FA4C4B;
-  border: 1.5px solid #FA4C4B;
+  border: 1px solid #FA4C4B;
   color: #FFFFFF;
 }
 
@@ -157,7 +156,7 @@ h5 {
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1.5px solid #FA4C4B;
+  border: 1px solid #FA4C4B;
   border-radius: 100px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -165,12 +164,12 @@ h5 {
 
 .boton-hard:hover {
   background-color: #F1AFD0;
-  border: 1.5px solid #F1AFD0;
+  border: 1px solid #F1AFD0;
 }
 
 .boton-hard:active {
   background-color: #222222;
-  border: 1.5px solid #222222;
+  border: 1px solid #222222;
 }
 
 .input-newsletter {
@@ -179,7 +178,7 @@ h5 {
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
-  border: 1.5px solid #222222;
+  border: 1px solid #222222;
   border-radius: 100px;
 }
 
@@ -209,17 +208,138 @@ input.radio:checked {
 
 footer {
   background-color: #FA4C4B;
-  padding: 3px;
-  width: 100%;
+  padding: 10px;
+  width: calc(100% + 1em);
   position: relative;
-  bottom: 0%;
+  bottom: -1em;
+  left: -1em;
+  margin-top: 100px;
 }
 
-.p-footer {
-  padding: 3px;
+p.footer {
+  color: #FFFFFF;
+  padding-left: 10px;
+}
+
+a.footer {
+  color: #FFFFFF;
+}
+
+.footer-links {
+  padding-right: 12px;
+}
+
+.insta {
+  position: relative;
+  width: 25px;
+  bottom: -1.4px;
+}
+
+.behance {
+  position: relative;
+  width: 20px;
+  top: -1.4px;
 }
 
 .presu-item-bar {
   background-color: #222222;
   height: 2px;
+}
+
+.img {
+  background-color: #F1AFD0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.banda-1 {
+  background-image: url(../../recursos/mateo.png);
+}
+
+.banda-2 {
+  background-image: url(../../recursos/amarillo.png);
+}
+
+.banda-3 {
+  background-image: url(../../recursos/meseta.jpg);
+}
+
+.banda-4 {
+  background-image: url(../../recursos/diego.jpeg);
+}
+
+.banda-5 {
+  background-image: url(../../recursos/sonido.jpeg);
+}
+
+.banda-6 {
+  background-image: url(../../recursos/aliaga.png);
+}
+
+.pro-intro {
+  margin-top: 150px;
+  margin-bottom: 350px;
+}
+
+/* móvil */
+.pro-card {
+  margin-top: 20px;
+  padding-bottom: 33px;
+  background-color: #FFFFFF;
+  border: 1px solid #222222;
+  border-radius: 10px;
+}
+
+.pro-card-img {
+  height: 250px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid #222222;
+}
+
+.pro-card-info {
+  padding: 15px;
+}
+
+.pro-card-header {
+  display: inline;
+}
+
+.pro-card-header-name, .pro-card-header-type {
+  margin: 0px;
+  width: 50%;
+}
+
+.pro-card-header-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pro-card-link {
+  position: relative;
+  float: right;
+}
+
+.grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.row {
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
 }
