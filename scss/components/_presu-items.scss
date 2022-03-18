@@ -2,3 +2,41 @@
     background-color: $black;
     height: 2px;
 }
+label {
+    font-family: $font;
+    font-weight: $reg;
+    font-size: 14px;
+    color: $text;
+    margin-bottom: 10px;
+    padding-right: 10px;
+}
+input[type="radio"] {
+    appearance: none;
+    background-color: $white;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: $border solid $black;
+    border-radius: $radius-small;
+}
+input[type="text"].presu {
+    appearance: none;
+    background-color: $white;
+    color: currentColor;
+    margin-left: 10px;
+    width: 1.15em;
+    height: 1.15em;
+    border: $border solid $black;
+    border-radius: $radius-small;
+    width: 15%;
+}
+p.input{
+    line-height: 10px;
+}
+input[type="text"].presu-item-otro{
+    width: 100%;
+}
+/*
+.presu-item-hide{
+    display: none;
+}*/

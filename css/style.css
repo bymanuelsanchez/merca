@@ -51,7 +51,7 @@ a.top-bar.logo {
 }
 
 html {
-  background-color: #FFF6FB;
+  background-color: #FFEBF5;
 }
 
 body {
@@ -104,28 +104,6 @@ h5 {
   font-weight: 600;
   font-size: 14px;
   color: #222222;
-}
-
-.boton-soft-white {
-  background-color: transparent;
-  padding: 6px;
-  padding-left: 10px;
-  padding-right: 10px;
-  border: 1px solid #222222;
-  border-radius: 100px;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-}
-
-.boton-soft-white:hover {
-  background-color: #222222;
-  color: #FFFFFF;
-}
-
-.boton-soft-white:active {
-  background-color: #FA4C4B;
-  border: 1px solid #FA4C4B;
-  color: #FFFFFF;
 }
 
 .boton-soft-black {
@@ -246,6 +224,53 @@ a.footer {
   height: 2px;
 }
 
+label {
+  font-family: "Archivo", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #222222;
+  margin-bottom: 10px;
+  padding-right: 10px;
+}
+
+input[type=radio] {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FFFFFF;
+  color: currentColor;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid #222222;
+  border-radius: 2px;
+}
+
+input[type=text].presu {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #FFFFFF;
+  color: currentColor;
+  margin-left: 10px;
+  width: 1.15em;
+  height: 1.15em;
+  border: 1px solid #222222;
+  border-radius: 2px;
+  width: 15%;
+}
+
+p.input {
+  line-height: 10px;
+}
+
+input[type=text].presu-item-otro {
+  width: 100%;
+}
+
+/*
+.presu-item-hide{
+    display: none;
+}*/
 .img {
   background-color: #F1AFD0;
   background-size: cover;
@@ -253,6 +278,10 @@ a.footer {
   background-position: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+.landing-img {
+  background-image: url(../../recursos/landing-pink.png);
 }
 
 .banda-1 {
@@ -342,4 +371,31 @@ a.footer {
   -webkit-box-flex: 50%;
       -ms-flex: 50%;
           flex: 50%;
+}
+
+/*HOME*/
+/*HOME*/
+/*HOME*/
+/* landing */
+.landing-img {
+  position: absolute;
+  z-index: -1;
+  height: 100vh;
+  width: calc(100vw + 1em);
+  left: -1em;
+  top: 0;
+}
+
+h1.landing-logo {
+  position: relative;
+  color: #222222;
+  font-size: 29vw;
+  left: -0.08em;
+  top: -0.25em;
+  margin: 0;
+}
+
+.landing-text {
+  margin-top: 6em;
+  margin-bottom: 0.5em;
 }

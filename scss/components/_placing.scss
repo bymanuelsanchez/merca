@@ -1,0 +1,27 @@
+/*HOME*/
+/*HOME*/
+/*HOME*/
+
+
+/* landing */
+.landing-img{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: calc(100vw + 1em);
+    left: -1em;
+    top: 0;
+}
+h1.landing-logo{
+    position: relative;
+    color: $black;
+    font-size: 29vw;
+    left: -.08em;
+    top: -.25em;
+    margin: 0;
+}
+.landing-text{
+    margin-top: 6em;
+    margin-bottom: .5em;
+}
+
