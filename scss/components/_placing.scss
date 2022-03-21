@@ -1,7 +1,11 @@
-/*HOME*/
-/*HOME*/
-/*HOME*/
+/*----------
+    
+    MOBILE
 
+----------*/
+
+
+/*------HOME------*/
 
 /* landing */
 .landing-img{
@@ -15,13 +19,80 @@
 h1.landing-logo{
     position: relative;
     color: $black;
-    font-size: 29vw;
+    font-size: 27.5vw;
     left: -.08em;
-    top: -.25em;
+    top: .1em;
     margin: 0;
 }
 .landing-text{
-    margin-top: 6em;
+    margin-top: 8em;
     margin-bottom: .5em;
+}
+
+/* transition gradient */
+.transition-gradient{
+    position: relative;
+    height: 2em;
+    width: calc(100vw + 1em);
+    left: -1em;
+    top: 2.3em;
+    /*border: $border solid $black;*/
+    background: linear-gradient(0deg, $web-back 0%, rgba(0,0,0,0) 100%);;
+}
+
+/* serv */
+.serv{
+    margin-top: 7em;
+}
+.serv-item{
+    margin-bottom: 3em;
+}
+.serv-item-title{
+    margin-bottom: 0em;
+}
+.serv-item-text{
+    margin-top: 1em;
+}
+.serv-item-link{
+    display: none;
+}
+
+/* pres */
+.pres{
+    margin-top: 0em;
+}
+
+/* pro */
+.pro{
+    margin-top: 4em;
+}
+.pro-title{
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.pro-text{
+    margin-top: 1.4em;
+    margin-bottom: 2em;
+}
+
+/* faq */
+.faq{
+    margin-top: 4em;
+}
+.faq-item-title{
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+.faq-item-text{
+    margin-top: .5em;
+}
+
+/* contact */
+.contact{
+    margin-top: 10em;
+    margin-bottom: 12em;
+}
+.newsletter{
+    margin-top: 4em;
 }
 

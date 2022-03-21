@@ -22,6 +22,13 @@
 
 /*----- Border -----*/
 /*----- Transition time -----*/
+nav {
+  position: fixed;
+  top: 0%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 a.top-bar {
   font-size: 18px;
   margin-top: 0px;
@@ -52,10 +59,12 @@ a.top-bar.logo {
 
 html {
   background-color: #FFEBF5;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 1em;
+  margin: 1.5em;
 }
 
 a {
@@ -94,8 +103,8 @@ h3 {
 h4 {
   font-family: "Archivo", sans-serif;
   font-weight: 600;
-  font-size: 85px;
-  line-height: 69px;
+  font-size: 80px;
+  line-height: 65px;
   color: #222222;
 }
 
@@ -187,10 +196,10 @@ input.radio:checked {
 footer {
   background-color: #FA4C4B;
   padding: 10px;
-  width: calc(100% + 1em);
+  width: calc(100% + 2em);
   position: relative;
-  bottom: -1em;
-  left: -1em;
+  bottom: -1.5em;
+  left: -1.5em;
   margin-top: 100px;
 }
 
@@ -281,7 +290,7 @@ input[type=text].presu-item-otro {
 }
 
 .landing-img {
-  background-image: url(../../recursos/landing-pink.png);
+  background-image: url(../../recursos/landing.png);
 }
 
 .banda-1 {
@@ -373,9 +382,12 @@ input[type=text].presu-item-otro {
           flex: 50%;
 }
 
-/*HOME*/
-/*HOME*/
-/*HOME*/
+/*----------
+
+    MOBILE
+
+----------*/
+/*------HOME------*/
 /* landing */
 .landing-img {
   position: absolute;
@@ -389,13 +401,90 @@ input[type=text].presu-item-otro {
 h1.landing-logo {
   position: relative;
   color: #222222;
-  font-size: 29vw;
+  font-size: 27.5vw;
   left: -0.08em;
-  top: -0.25em;
+  top: 0.1em;
   margin: 0;
 }
 
 .landing-text {
-  margin-top: 6em;
+  margin-top: 8em;
   margin-bottom: 0.5em;
+}
+
+/* transition gradient */
+.transition-gradient {
+  position: relative;
+  height: 2em;
+  width: calc(100vw + 1em);
+  left: -1em;
+  top: 2.3em;
+  /*border: $border solid $black;*/
+  background: -webkit-gradient(linear, left bottom, left top, from(#FFEBF5), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, #FFEBF5 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+/* serv */
+.serv {
+  margin-top: 7em;
+}
+
+.serv-item {
+  margin-bottom: 3em;
+}
+
+.serv-item-title {
+  margin-bottom: 0em;
+}
+
+.serv-item-text {
+  margin-top: 1em;
+}
+
+.serv-item-link {
+  display: none;
+}
+
+/* pres */
+.pres {
+  margin-top: 0em;
+}
+
+/* pro */
+.pro {
+  margin-top: 4em;
+}
+
+.pro-title {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.pro-text {
+  margin-top: 1.4em;
+  margin-bottom: 2em;
+}
+
+/* faq */
+.faq {
+  margin-top: 4em;
+}
+
+.faq-item-title {
+  margin-top: 2em;
+  margin-bottom: 0em;
+}
+
+.faq-item-text {
+  margin-top: 0.5em;
+}
+
+/* contact */
+.contact {
+  margin-top: 10em;
+  margin-bottom: 12em;
+}
+
+.newsletter {
+  margin-top: 4em;
 }
