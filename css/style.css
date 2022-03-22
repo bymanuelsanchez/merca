@@ -127,12 +127,17 @@ h5 {
 
 ----------*/
 @media all and (min-width: 650px) {
-  p, label {
+  p, label, input {
     font-size: calc(14px + .3em);
   }
 
-  .boton-soft-black, .boton-hard, input.input-newsletter {
+  .boton-soft-black, .boton-hard, input.input-newsletter, label.presu {
     font-size: calc(14px + .3em);
+  }
+
+  label.presu {
+    position: relative;
+    top: -3px;
   }
 
   h2 {
@@ -230,6 +235,19 @@ h5 {
 
 input.radio:checked {
   background-color: #FA4C4B;
+}
+
+a {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+a.link-in-text:hover {
+  color: #FA4C4B;
+}
+
+a.link-in-text.footer:hover {
+  color: #222222;
 }
 
 footer {
@@ -405,13 +423,38 @@ input[type=text].presu-item-otro {
 
 .pro-card-link {
   position: relative;
-  float: right;
 }
 
 @media all and (min-width: 650px) {
   .thin-section {
-    padding-left: 10em;
-    padding-right: 10em;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .pro-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .pro-card-img {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+    border-radius: 10px 0px 0px 10px;
+    border-right: 1px solid #222222;
+  }
+
+  .pro-card-info {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
   }
 }
 .grid {
@@ -596,3 +639,78 @@ h1.landing-logo {
     DESK
 
 ----------*/
+@media all and (min-width: 650px) {
+  /*------HOME------*/
+  /* landing */
+  h1.landing-logo {
+    top: -5vh;
+  }
+
+  .landing-text {
+    margin-top: -15vh;
+  }
+
+  /* serv */
+  .serv {
+    margin-top: 80vh;
+    padding-left: 3vw;
+  }
+
+  .serv-item-2 {
+    margin-top: 5vh;
+  }
+
+  .serv-item-3 {
+    margin-top: calc(2 * 5vh);
+  }
+
+  .serv-item-text {
+    width: 85%;
+  }
+
+  /* pres */
+  .pres {
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+  }
+
+  /* pro */
+  .pro {
+    margin-top: 50vh;
+    margin-bottom: 50vh;
+  }
+
+  .pro-text {
+    margin-top: 70%;
+  }
+
+  /* faq */
+  .faq-title {
+    width: 10%;
+  }
+
+  .faq-item-text {
+    width: 85%;
+  }
+
+  /* contact */
+  .contact {
+    margin-top: 30vh;
+  }
+
+  /*------PROYECTOS------*/
+  /* contact */
+  .pro-bottom-title {
+    width: 60%;
+  }
+
+  /* contact */
+  .pro-bottom {
+    margin-top: 40vh;
+    margin-bottom: 40vh;
+  }
+
+  .pro-bottom-title {
+    width: 60%;
+  }
+}

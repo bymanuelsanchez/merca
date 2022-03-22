@@ -135,5 +135,74 @@ h1.landing-logo{
 ----------*/
 
 @media all and (min-width: $desk){
+    /*------HOME------*/
+
+    /* landing */
+    h1.landing-logo{
+        top: -5vh;
+    }
+    .landing-text{
+        margin-top: -15vh;
+    }
+
+    /* serv */
+    .serv{
+        margin-top: 80vh;
+        padding-left: 3vw;
+    }
+    .serv-item-2{
+        margin-top: 5vh;
+    }
+    .serv-item-3{
+        margin-top: calc(2 * 5vh);
+    }
+    .serv-item-text{
+        width: 85%;
+    }
+
+    /* pres */
+    .pres{
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+    }
+
+    /* pro */
+    .pro{
+        margin-top: 50vh;
+        margin-bottom: 50vh;
+    }
+    .pro-text{
+        margin-top: 70%;
+    }
+
+
+    /* faq */
+    .faq-title{
+        width: 10%;
+    }
+    .faq-item-text{
+        width: 85%;
+    }
+
+    /* contact */
+    .contact{
+        margin-top: 30vh;
+    }
+
+
+    /*------PROYECTOS------*/
     
+    /* contact */
+    .pro-bottom-title{
+        width: 60%;
+    }
+
+    /* contact */
+    .pro-bottom{
+        margin-top: 40vh;
+        margin-bottom: 40vh;
+    }
+    .pro-bottom-title{
+        width: 60%;
+    }
 }

@@ -37,13 +37,26 @@
 
 .pro-card-link{
     position: relative;
-    float: right;
+    
 }
 
 
 @media all and (min-width: $desk){
     .thin-section{
-        padding-left: 10em;
-        padding-right: 10em;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .pro-card{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .pro-card-img{
+        flex: 50%;
+        border-radius: $radius 0px 0px $radius;
+        border-right: $border solid $black;
+    }
+    .pro-card-info{
+        flex: 50%;
     }
 }

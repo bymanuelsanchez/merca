@@ -53,3 +53,13 @@
 input.radio:checked{
     background-color: $pop;
 }
+
+a{
+    transition: $tran-time;
+}
+a.link-in-text:hover{
+    color: $pop;
+}
+a.link-in-text.footer:hover{
+    color: $black;
+}

@@ -62,13 +62,16 @@ h5{
 ----------*/
 
 @media all and (min-width: $desk){
-    p, label{        
+    p, label, input{        
         font-size: calc(14px + .3em);
     }
-    .boton-soft-black, .boton-hard, input.input-newsletter{
+    .boton-soft-black, .boton-hard, input.input-newsletter, label.presu{
         font-size: calc(14px + .3em);
     }
-
+    label.presu{
+        position: relative;
+        top: -3px;
+    }
     h2{
         font-size: calc(25px + .5em);
     }
