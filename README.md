@@ -15,3 +15,6 @@
 - [ ] Arreglar ancho nombre banda del los pro-card en mobile
 - [ ] Burger menu for mobile
 - [ ] Add JS
+
+# MERCA's design file:
+https://www.figma.com/file/COq1i5OsGOpzLNuQxgJl7m/Manuel-projectbeta?node-id=50%3A95
