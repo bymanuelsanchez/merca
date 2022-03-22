@@ -39,3 +39,11 @@
     position: relative;
     float: right;
 }
+
+
+@media all and (min-width: $desk){
+    .thin-section{
+        padding-left: 10em;
+        padding-right: 10em;
+    }
+}

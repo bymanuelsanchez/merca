@@ -96,3 +96,44 @@ h1.landing-logo{
     margin-top: 4em;
 }
 
+
+/*------PRESUPUESTO------*/
+.presu-header{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+.presu-item-hide:last-child{
+    margin-bottom: 4em;
+}
+.presu-result{
+    margin-top: 6em;
+}
+.presu-result-title{
+    margin-bottom: .5em;
+}
+
+
+/*------PROYECTOS------*/
+.pro-intro{
+    margin-top: 7em;
+    margin-bottom: 4em;
+}
+.pro-bottom{
+    margin-top: 7em;
+    margin-bottom: 10em;
+}
+.pro-bottom-title{
+    margin-bottom: .5em;
+}
+
+
+
+/*----------
+    
+    DESK
+
+----------*/
+
+@media all and (min-width: $desk){
+    
+}

@@ -29,3 +29,9 @@ a.footer{
     width: 20px;
     top: -1.4px;
 }
+
+@media all and (min-width: $desk){
+    p.footer{
+        font-size: 14px;
+    }
+}

@@ -22,6 +22,7 @@
 
 /*----- Border -----*/
 /*----- Transition time -----*/
+/*----- @media width -----*/
 nav {
   position: fixed;
   top: 0%;
@@ -67,6 +68,11 @@ body {
   margin: 1.5em;
 }
 
+/*----------
+
+    MOBILE
+
+----------*/
 a {
   text-decoration: none;
   color: #222222;
@@ -115,6 +121,39 @@ h5 {
   color: #222222;
 }
 
+/*----------
+
+    DESK
+
+----------*/
+@media all and (min-width: 650px) {
+  p, label {
+    font-size: calc(14px + .3em);
+  }
+
+  .boton-soft-black, .boton-hard, input.input-newsletter {
+    font-size: calc(14px + .3em);
+  }
+
+  h2 {
+    font-size: calc(25px + .5em);
+  }
+
+  h3 {
+    font-size: calc(40px + .5em);
+  }
+
+  h4 {
+    position: relative;
+    line-height: 80%;
+    font-size: 15vw;
+    margin: 0;
+  }
+
+  h5 {
+    font-size: calc(14px + .5em);
+  }
+}
 .boton-soft-black {
   background-color: transparent;
   padding: 6px;
@@ -228,6 +267,11 @@ a.footer {
   top: -1.4px;
 }
 
+@media all and (min-width: 650px) {
+  p.footer {
+    font-size: 14px;
+  }
+}
 .presu-item-bar {
   background-color: #222222;
   height: 2px;
@@ -364,6 +408,12 @@ input[type=text].presu-item-otro {
   float: right;
 }
 
+@media all and (min-width: 650px) {
+  .thin-section {
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+}
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -382,6 +432,25 @@ input[type=text].presu-item-otro {
           flex: 50%;
 }
 
+@media all and (min-width: 650px) {
+  .row-2 {
+    -webkit-box-flex: 50%;
+        -ms-flex: 50%;
+            flex: 50%;
+  }
+
+  .row-3 {
+    -webkit-box-flex: 33.333%;
+        -ms-flex: 33.333%;
+            flex: 33.333%;
+  }
+
+  .row-3-big {
+    -webkit-box-flex: 66.666%;
+        -ms-flex: 66.666%;
+            flex: 66.666%;
+  }
+}
 /*----------
 
     MOBILE
@@ -488,3 +557,42 @@ h1.landing-logo {
 .newsletter {
   margin-top: 4em;
 }
+
+/*------PRESUPUESTO------*/
+.presu-header {
+  margin-top: 3em;
+  margin-bottom: 2em;
+}
+
+.presu-item-hide:last-child {
+  margin-bottom: 4em;
+}
+
+.presu-result {
+  margin-top: 6em;
+}
+
+.presu-result-title {
+  margin-bottom: 0.5em;
+}
+
+/*------PROYECTOS------*/
+.pro-intro {
+  margin-top: 7em;
+  margin-bottom: 4em;
+}
+
+.pro-bottom {
+  margin-top: 7em;
+  margin-bottom: 10em;
+}
+
+.pro-bottom-title {
+  margin-bottom: 0.5em;
+}
+
+/*----------
+
+    DESK
+
+----------*/

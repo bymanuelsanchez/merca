@@ -1,3 +1,9 @@
+/*----------
+    
+    MOBILE
+
+----------*/
+
 a{
     text-decoration: none;
     color: $text;
@@ -46,3 +52,39 @@ h5{
     color: $text;
 }
 
+
+
+
+/*----------
+    
+    DESK
+
+----------*/
+
+@media all and (min-width: $desk){
+    p, label{        
+        font-size: calc(14px + .3em);
+    }
+    .boton-soft-black, .boton-hard, input.input-newsletter{
+        font-size: calc(14px + .3em);
+    }
+
+    h2{
+        font-size: calc(25px + .5em);
+    }
+    
+    h3{
+        font-size: calc(40px + .5em);
+    }
+    
+    h4{
+        position: relative;
+        line-height: 80%;
+        font-size: 15vw;
+        margin: 0;
+    }
+    
+    h5{
+        font-size: calc(14px + .5em);
+    }
+}

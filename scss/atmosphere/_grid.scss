@@ -6,3 +6,15 @@
 .row{
     flex: 50%;
 }
+
+@media all and (min-width: $desk){
+    .row-2{
+        flex: 50%;
+    }
+    .row-3{
+        flex: 33.333%;
+    }
+    .row-3-big{
+        flex: 66.666%;
+    }
+}

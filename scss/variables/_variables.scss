@@ -38,12 +38,14 @@ $logo: 'Space Grotesk', sans-serif;
 
 
 /*----- Border -----*/
-
 $border: 1px;
 $radius: 10px;
 $radius-small: 2px;
 
-
 /*----- Transition time -----*/
-
 $tran-time: .2s;
+
+
+/*----- @media width -----*/
+$desk: 650px;
+
