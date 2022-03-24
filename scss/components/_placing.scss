@@ -111,6 +111,9 @@ h1.landing-logo{
 .presu-result-title{
     margin-bottom: .5em;
 }
+.presu-eraser{
+    margin-top: -2em;
+}
 
 
 /*------PROYECTOS------*/
@@ -146,8 +149,9 @@ h1.landing-logo{
     }
 
     /* serv */
+    
     .serv{
-        margin-top: 80vh;
+        margin-top: 35vh;
         padding-left: 3vw;
     }
     .serv-item-2{
@@ -162,31 +166,54 @@ h1.landing-logo{
 
     /* pres */
     .pres{
-        margin-top: 30vh;
+        margin-top: 20vh;
         margin-bottom: 30vh;
+    }
+    .pres-text{
+        width: 50vw;
+        margin-bottom: 6vh;
     }
 
     /* pro */
     .pro{
-        margin-top: 50vh;
-        margin-bottom: 50vh;
+        margin-top: 30vh;
+        margin-bottom: 30vh;
     }
     .pro-text{
-        margin-top: 70%;
+        margin-top: 51vh;
+        width: 85%;
+    }
+    .pro-title{
+        margin-top: 8vh;
     }
 
 
     /* faq */
+    .faq{
+        margin-top: -30vh;
+    }
     .faq-title{
+        margin-top: -10vh;
         width: 10%;
     }
     .faq-item-text{
+
         width: 85%;
+    }
+    .faq-items{
+        margin-top: 15vh;
     }
 
     /* contact */
     .contact{
         margin-top: 30vh;
+    }
+
+    .blank{
+        height: 180px;
+        width: 100px;
+        margin-bottom: 5vh;
+        margin-top: 10vh;
     }
 
 
@@ -205,4 +232,6 @@ h1.landing-logo{
     .pro-bottom-title{
         width: 60%;
     }
+
+    
 }

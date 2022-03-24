@@ -47,16 +47,20 @@
         padding-right: 10%;
     }
     .pro-card{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        padding-bottom: 0%;
     }
     .pro-card-img{
         flex: 50%;
+        height: 50vh;
         border-radius: $radius 0px 0px $radius;
         border-right: $border solid $black;
     }
     .pro-card-info{
         flex: 50%;
+        padding: 1.5em;
+    }
+    .pro-card-link{
+        float: right;
+        align-content: flex-end;
     }
 }

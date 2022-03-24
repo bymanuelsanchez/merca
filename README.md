@@ -10,9 +10,11 @@
 - [x] Placing desk home
 - [x] Placing desk presupuesto
 - [x] Placing desk proyectos
-- [ ] Add link to buttons *remember target=blank
-- [ ] Add inner page movement *preguntar Diego por DOWN
-- [ ] Arreglar ancho nombre banda del los pro-card en mobile
+- [x] Add link to buttons *remember target=blank
+- [x] Add inner page movement *preguntar Diego por DOWN
+- [x] Arreglar grid
+- [ ] Revisar placing
+- [ ] Quitar botones en mobile
 - [ ] Burger menu for mobile
 - [ ] Add JS
 

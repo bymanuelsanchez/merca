@@ -12,8 +12,8 @@
     color: $white;
 }
 .boton-soft-black:active{
-    background-color: $pop;
-    border: $border solid $pop;
+    background-color: $dark-pink;
+    border: $border solid $dark-pink;
     color: $white;
 }
 
@@ -29,12 +29,12 @@
     transition: $tran-time;
 }
 .boton-hard:hover{
-    background-color: $dark-pink;
-    border: $border solid $dark-pink;
-}
-.boton-hard:active{
     background-color: $black;
     border: $border solid $black;
+}
+.boton-hard:active{
+    background-color: $dark-pink;
+    border: $border solid $dark-pink;
 }
 
 .input-newsletter{
@@ -54,6 +54,10 @@ input.radio:checked{
     background-color: $pop;
 }
 
+input[type=text]:focus {
+    border: $border solid $black;;
+  }
+
 a{
     transition: $tran-time;
 }
@@ -61,5 +65,9 @@ a.link-in-text:hover{
     color: $pop;
 }
 a.link-in-text.footer:hover{
+    color: $black;
+}
+
+.presu-eraser-item:hover{
     color: $black;
 }

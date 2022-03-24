@@ -29,6 +29,13 @@ a.footer{
     width: 20px;
     top: -1.4px;
 }
+svg{
+    color: $white;
+    transition: $tran-time;
+}
+svg:hover{
+    color: $black;
+}
 
 @media all and (min-width: $desk){
     p.footer{
