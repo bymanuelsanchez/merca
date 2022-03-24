@@ -13,6 +13,7 @@
 - [x] Add link to buttons *remember target=blank
 - [x] Add inner page movement *preguntar Diego por DOWN
 - [x] Arreglar grid
+- [ ] Linkear los botones de Proyectos
 - [ ] Revisar placing
 - [ ] Quitar botones en mobile
 - [ ] Burger menu for mobile
