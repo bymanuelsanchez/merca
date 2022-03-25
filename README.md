@@ -15,9 +15,11 @@
 - [x] Arreglar grid
 - [ ] Linkear los botones de Proyectos
 - [ ] Revisar placing
-- [ ] Quitar botones en mobile
+- [ ] Background for nav
+- [ ] Eliminate button fot mobile
 - [ ] Burger menu for mobile
 - [ ] Add JS
+- [ ] Change lorem for real info
 
 # MERCA's design file:
 https://www.figma.com/file/COq1i5OsGOpzLNuQxgJl7m/Manuel-projectbeta?node-id=50%3A95

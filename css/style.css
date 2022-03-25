@@ -760,6 +760,18 @@ h1.landing-logo {
   }
 
   /*------PROYECTOS------*/
+  /* intro */
+  .pro-intro-title {
+    margin-top: 20vh;
+  }
+
+  .blank-pro {
+    height: 90px;
+    width: 100px;
+    margin-bottom: 5vh;
+    margin-top: 10vh;
+  }
+
   /* contact */
   .pro-bottom-title {
     width: 60%;
@@ -772,6 +784,6 @@ h1.landing-logo {
   }
 
   .pro-bottom-title {
-    width: 60%;
+    width: 50%;
   }
 }
