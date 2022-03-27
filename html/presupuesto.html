@@ -38,7 +38,7 @@
                 <input type="radio" class="radio" id="vinilo" name="camisetas" value="vinilo">
                 <label class="presu" for="vinilo">Vinilo</label>
             </form>
-            <p class="bold">Cantidad <input type="text" class="presu"></p>
+            <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-camiseta"></p>
             <p>* las tallas se distribuiran de forma equitativa de XS a XL, si deseas especificarlas, contáctanos.
             </p>
         </div>
@@ -126,14 +126,16 @@
         </div>
     </section>
     <section class="presu-eraser">
-        <h5 class="underline"><a href="../html/presupuesto.html" class="bold pop thin-section link-in-text">Borrar selección</a></h5>
+        <h5 class="underline"><a href="../html/presupuesto.html" class="bold pop thin-section link-in-text">Borrar
+                selección</a></h5>
     </section>
     <section class="presu-result thin-section">
-        <h3 class="presu-result-title">Total 750€</h3>
+        <h3 class="presu-result-title">Total <span id="final-result" class="pop">0</span> €</h3>
         <a href="" class="boton-hard" onclick="window.print();return false;" type="text/css" media="print">DESCARGAR
             .PDF</a>
-        <a href="../html/home.html#faq" class="boton-soft-black">¿DUDAS?</a>
+        <button href="" class="boton-soft-black" onclick="updateResult()">CALCULAR</button>
     </section>
+    <script src="../scripts/index.js"></script>
     <footer class="grid">
         <p id="contact" class="footer row">¿Dudas? <a href="../html/home.html#contact"
                 class="link-in-text footer">Contáctanos.</a></p>
