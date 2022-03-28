@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="no-print">
         <ul class="top-bar">
             <li class="top-bar-item"><a href="../html/home.html" class="logo top-bar">MERCA</a>
             <li class="top-bar-item"><a href="../html/presupuesto.html" class="top-bar underline">Presupuesto</a></li>
@@ -55,8 +55,6 @@
                 <label class="presu" for="1000">1000</label>
                 <input type="radio" class="radio" id="1500" name="pegatinas" value="1500">
                 <label class="presu" for="1500">1500</label>
-                <input type="radio" class="radio" id="2000" name="pegatinas" value="2000">
-                <label class="presu" for="2000">2000</label>
             </form>
         </div>
     </section>
@@ -66,12 +64,12 @@
         <div class="presu-item-hide">
             <p class="bold">Técnica</p>
             <form>
-                <input type="radio" class="radio" id="serigrafia" name="totes" value="serigrafia">
+                <input type="radio" class="radio" id="serigrafia" name="totes" value="serigrafia-tote">
                 <label class="presu" for="serigrafia">Serigrafía</label>
-                <input type="radio" class="radio" id="vinilo" name="totes" value="vinilo">
+                <input type="radio" class="radio" id="vinilo-tote" name="totes" value="vinilo">
                 <label class="presu" for="vinilo">Vinilo</label>
             </form>
-            <p class="bold">Cantidad <input type="text" class="presu"></p>
+            <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-tote"></p>
         </div>
     </section>
     <section class="presu-item thin-section">
@@ -126,17 +124,17 @@
         </div>
     </section>
     <section class="presu-eraser">
-        <h5 class="underline"><a href="../html/presupuesto.html" class="bold pop thin-section link-in-text">Borrar
+        <h5 class="underline no-print"><a href="../html/presupuesto.html" class="bold pop thin-section link-in-text">Borrar
                 selección</a></h5>
     </section>
     <section class="presu-result thin-section">
         <h3 class="presu-result-title">Total <span id="final-result" class="pop">0</span> €</h3>
-        <a href="" class="boton-hard" onclick="window.print();return false;" type="text/css" media="print">DESCARGAR
+        <button href="" class="boton-hard no-print" onclick="updateResult()">CALCULAR</button>
+        <a href="" class="boton-soft-black no-print" onclick="window.print();return false;" type="text/css" media="print">DESCARGAR
             .PDF</a>
-        <button href="" class="boton-soft-black" onclick="updateResult()">CALCULAR</button>
     </section>
     <script src="../scripts/index.js"></script>
-    <footer class="grid">
+    <footer class="grid no-print">
         <p id="contact" class="footer row">¿Dudas? <a href="../html/home.html#contact"
                 class="link-in-text footer">Contáctanos.</a></p>
         <div class="footer-links">

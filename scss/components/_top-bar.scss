@@ -1,9 +1,17 @@
 nav{
     position: fixed;
     top: 0%;
-    margin-top: 20px;
-    margin-bottom: 20px;
     z-index: 1000;
+    background-color: $pop;
+    width: calc(100% + 3em);
+    left: -1.5em;
+    top: 0;
+    padding-left: 3em;
+    padding-top: 1.2em;
+    padding-bottom: .5em;
+}
+li{
+    margin-right: 1em;
 }
 a.top-bar{
     font-size: 18px;
@@ -19,8 +27,8 @@ a.top-bar.logo{
     padding-left: 0%;
     display: inline-block;
     margin-top: 0%;
+    color: $white;
 }
-
 .top-bar-item{
     display: inline-block;
     position: relative;
