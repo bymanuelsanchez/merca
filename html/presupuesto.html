@@ -18,17 +18,28 @@
 </head>
 
 <body>
-    <nav class="no-print">
-        <ul class="top-bar">
-            <li class="top-bar-item"><a href="../html/home.html" class="logo top-bar">MERCA</a>
-            <li class="top-bar-item"><a href="../html/presupuesto.html" class="top-bar underline">Presupuesto</a></li>
-            <li class="top-bar-item"><a href="../html/proyectos.html" class="top-bar">Proyectos</a></li>
-            <li class="top-bar-item"><a href="../html/home.html#contact" class="top-bar">Contacto</a></li>
-        </ul>
+    <nav>
+        <a href="../html/home.html" class="logo top-bar">MERCA</a>
+            <div class="menu-wrap">
+                <input class="toggler" type="checkbox">
+                <div class="burger">
+                    <div></div>
+                </div>
+                <div class="menu">
+                    <ul class="top-bar">
+                        <li><a href="../html/home.html" class="top-bar">Inicio</a></li>
+                        <li class="top-bar-item"><a href="../html/presupuesto.html"
+                                class="top-bar  in-page">Presupuesto</a></li>
+                        <li class="top-bar-item"><a href="../html/proyectos.html" class="top-bar">Proyectos</a></li>
+                        <li class="top-bar-item"><a href="../html/home.html#contact" class="top-bar">Contacto</a></li>
+                    </ul>
+                </div>
+
+            </div>
     </nav>
     <h3 class="pop presu-header thin-section">Tu presupuesto a medida</h3>
     <section class="presu-item thin-section">
-        <h2>Camisetas</h2>
+        <h2 class="presu-title">Camisetas</h2>
         <div class="presu-item-bar"></div>
         <div class="presu-item-hide">
             <p class="bold">Técnica</p>
@@ -41,10 +52,11 @@
             <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-camiseta"></p>
             <p>* las tallas se distribuiran de forma equitativa de XS a XL, si deseas especificarlas, contáctanos.
             </p>
+            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2>Pegatinas</h2>
+        <h2 class="presu-title">Pegatinas</h2>
         <div class="presu-item-bar"></div>
         <div class="presu-item-hide">
             <p class="bold">Cantidad</p>
@@ -56,10 +68,11 @@
                 <input type="radio" class="radio" id="1500" name="pegatinas" value="1500">
                 <label class="presu" for="1500">1500</label>
             </form>
+            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2>Totes</h2>
+        <h2 class="presu-title">Totes</h2>
         <div class="presu-item-bar"></div>
         <div class="presu-item-hide">
             <p class="bold">Técnica</p>
@@ -70,10 +83,11 @@
                 <label class="presu" for="vinilo">Vinilo</label>
             </form>
             <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-tote"></p>
+            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2>Poster</h2>
+        <h2 class="presu-title">Poster</h2>
         <div class="presu-item-bar"></div>
         <div class="presu-item-hide">
             <p class="bold">Tamaño</p>
@@ -97,10 +111,11 @@
                 <label class="presu" for="color">Color</label>
             </form>
             <p class="bold">Cantidad <input type="text" class="presu"></p>
+            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2>Chapas</h2>
+        <h2 class="presu-title">Chapas</h2>
         <div class="presu-item-bar"></div>
         <div class="presu-item-hide">
             <p class="bold">Tamaño (diametro en cm)</p>
@@ -113,27 +128,31 @@
                 <label class="presu" for="10">10</label>
             </form>
             <p class="bold">Cantidad <input type="text" class="presu"></p>
+            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2>Otro</h2>
+        <h2 class="presu-title">Otro</h2>
         <div class="presu-item-bar"></div>
         <div class="presu-item-hide">
             <p class="bold">¿Necesitas algo más? Cuéntanoslo.</p>
             <input type="text presu-item-otro">
+            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-eraser">
-        <h5 class="underline no-print"><a href="../html/presupuesto.html" class="bold pop thin-section link-in-text">Borrar
+        <h5 class="underline no-print"><a href="../html/presupuesto.html"
+                class="bold pop thin-section link-in-text">Borrar
                 selección</a></h5>
     </section>
     <section class="presu-result thin-section">
         <h3 class="presu-result-title">Total <span id="final-result" class="pop">0</span> €</h3>
         <button href="" class="boton-hard no-print" onclick="updateResult()">CALCULAR</button>
-        <a href="" class="boton-soft-black no-print" onclick="window.print();return false;" type="text/css" media="print">DESCARGAR
+        <a href="" class="boton-soft-black no-print" onclick="window.print();return false;" type="text/css"
+            media="print">DESCARGAR
             .PDF</a>
     </section>
-    <script src="../scripts/index.js"></script>
+    <script src="../scripts/calculator.js"></script>
     <footer class="grid no-print">
         <p id="contact" class="footer row">¿Dudas? <a href="../html/home.html#contact"
                 class="link-in-text footer">Contáctanos.</a></p>

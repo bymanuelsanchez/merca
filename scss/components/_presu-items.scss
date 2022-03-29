@@ -36,7 +36,27 @@ p.input{
 input[type="text"].presu-item-otro{
     width: 100%;
 }
-/*
+
+
+
+
+
+
+
+/* JS (class-adder) */
+
+.presu-title{
+    transition: $tran-time;
+}
+.presu-title:hover{
+    cursor: pointer;
+    color: $pop;
+}
+
 .presu-item-hide{
     display: none;
-}*/
+}
+.presu-item-show{
+    display: block;
+}
+

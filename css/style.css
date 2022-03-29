@@ -30,28 +30,19 @@
 nav {
   position: fixed;
   top: 0%;
-  z-index: 1000;
-  background-color: #FA4C4B;
+  z-index: 500;
   width: calc(100% + 3em);
   left: -1.5em;
   top: 0;
   padding-left: 3em;
   padding-top: 1.2em;
-  padding-bottom: 0.5em;
-}
-
-li {
-  margin-right: 1em;
-}
-
-a.top-bar {
-  font-size: 18px;
-  margin-top: 0px;
-  padding-right: 4px;
+  padding-bottom: 1.3em;
 }
 
 a.top-bar.logo {
   padding-right: 6px;
+  font-size: 25px;
+  color: #222222;
 }
 
 .top-bar {
@@ -59,18 +50,165 @@ a.top-bar.logo {
   padding-left: 0%;
   display: inline-block;
   margin-top: 0%;
-  color: #FFFFFF;
 }
 
-.top-bar-item {
-  display: inline-block;
+/* BURGER */
+body ul {
+  list-style: none;
+}
+body ul > li {
+  padding: 0.5rem 0;
+}
+body .content {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body .content .image {
+  height: 150px;
+  width: 150px;
+  background: url(https://picsum.photos/500);
+  background-size: cover;
+}
+body .content p {
+  text-align: center;
+  width: 320px;
+}
+
+.burger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 8;
+  /* The Burger Lines*/
+  /****************/
+}
+.burger > div {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
   position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #222222;
+}
+.burger > div::before, .burger > div::after {
+  background: inherit;
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100%;
+  height: 3px;
+}
+.burger > div::before {
+  top: -11px;
+}
+.burger > div::after {
+  top: 11px;
+}
+
+.menu-wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
 
 .menu {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  font-size: 2rem;
+  background: #F1AFD0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  z-index: 2;
+}
+.menu > ul {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.toggler {
+  position: relative;
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 10;
+}
+.toggler:checked ~ .menu {
+  visibility: visible;
+}
+.toggler:checked ~ .menu > ul {
+  opacity: 1;
+}
+.toggler:checked ~ .burger > div {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.toggler:checked ~ .burger > div::before, .toggler:checked ~ .burger > div::after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/* BURGER adjustments*/
+div.burger, .toggler {
+  left: -4.9em;
+  top: -0.1em;
+}
+
+div.burger:hover, .toggler:hover {
+  color: #FA4C4B;
+}
+
+li {
+  margin-top: 0em;
+}
+
+a.top-bar {
+  font-size: 150px;
+  margin-top: 0px;
+  left: -100px !important;
+  color: #FFFFFF;
+}
+
+a.top-bar:hover {
+  color: #FA4C4B;
+}
+
+.in-page {
+  color: #FA4C4B !important;
 }
 
 html {
@@ -373,10 +511,25 @@ input[type=text].presu-item-otro {
   width: 100%;
 }
 
-/*
-.presu-item-hide{
-    display: none;
-}*/
+/* JS (class-adder) */
+.presu-title {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.presu-title:hover {
+  cursor: pointer;
+  color: #FA4C4B;
+}
+
+.presu-item-hide {
+  display: none;
+}
+
+.presu-item-show {
+  display: block;
+}
+
 .img {
   background-color: #F1AFD0;
   background-size: cover;
@@ -542,6 +695,10 @@ input[type=text].presu-item-otro {
 ----------*/
 /*------HOME------*/
 /* landing */
+section.landing {
+  z-index: 1000;
+}
+
 .landing-img {
   position: absolute;
   z-index: -1;

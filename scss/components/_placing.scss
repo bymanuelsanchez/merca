@@ -8,6 +8,9 @@
 /*------HOME------*/
 
 /* landing */
+section.landing{
+    z-index: 1000;
+}
 .landing-img{
     position: absolute;
     z-index: -1;

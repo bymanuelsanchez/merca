@@ -1,38 +1,178 @@
 nav{
     position: fixed;
     top: 0%;
-    z-index: 1000;
-    background-color: $pop;
+    z-index: 500;
     width: calc(100% + 3em);
     left: -1.5em;
     top: 0;
     padding-left: 3em;
     padding-top: 1.2em;
-    padding-bottom: .5em;
-}
-li{
-    margin-right: 1em;
-}
-a.top-bar{
-    font-size: 18px;
-    margin-top: 0px;
-    padding-right: 4px;
+    padding-bottom: 1.3em;
 }
 
 a.top-bar.logo{
     padding-right: 6px;
+    font-size: 25px;
+    color: $black;
 }
 .top-bar{
     list-style:none;
     padding-left: 0%;
     display: inline-block;
     margin-top: 0%;
+}
+
+
+/* BURGER */
+body {
+    ul {
+      list-style: none;
+      > li {
+        padding: 0.5rem 0;
+      }
+    }
+    .content {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      .image {
+        height: 150px;
+        width: 150px;
+  
+        background: url(https://picsum.photos/500);
+        background-size: cover;
+      }
+      p {
+        text-align: center;
+        width: 320px;
+      }
+    }
+  }
+  
+  .burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 8;
+    
+    /* The Burger Lines*/
+    > div {
+      transition: all $tran-time;
+      
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: $black;
+  
+      &::before,
+      &::after {
+        background: inherit;
+        position: absolute;
+        display: block;
+        content: "";
+        width: 100%;
+        height: 3px;
+      }
+      &::before {
+        top: -11px;
+      }
+      &::after {
+        top: 11px;
+      }
+    }
+    /****************/
+  }
+  
+  .menu-wrap {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .menu {
+    font-size: 2rem;
+  
+    background: $dark-pink;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+  
+    z-index: 2;
+  
+    > ul {
+      opacity: 0;
+      transition: opacity $tran-time;
+    }
+  }
+  
+  .toggler {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 10;
+  
+    &:checked ~ .menu {
+      visibility: visible;
+      > ul {
+        opacity: 1;
+      }
+    }
+  
+    &:checked ~ .burger > div {
+      transform: rotate(45deg);
+  
+      &::before,
+      &::after {
+        top: 0;
+        transform: rotate(90deg);
+      }
+    }
+  }
+
+/* BURGER adjustments*/
+
+div.burger, .toggler{
+    left: -4.9em;
+    top: -.1em;
+}
+div.burger:hover, .toggler:hover{
+    color: $pop;
+}
+
+li{
+    margin-top: 0em;
+}
+a.top-bar{
+    font-size: 150px;
+    margin-top: 0px;
+    left: -100px !important;
     color: $white;
 }
-.top-bar-item{
-    display: inline-block;
-    position: relative;
+a.top-bar:hover{
+    color: $pop;
 }
-.menu{
-    justify-content: flex-end;
+.in-page{
+    color: $pop !important;
 }
+  

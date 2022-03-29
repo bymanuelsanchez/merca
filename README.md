@@ -14,6 +14,7 @@
 - [x] Add inner page movement *preguntar Diego por DOWN
 - [x] Arreglar grid
 - [x] Add JS presupuesto
+- [ ] Add JS presupuesto add class
 - [ ] Add JS pro-card
 - [x] @media print
 - [ ] copy (Change lorem for real info)
@@ -21,7 +22,7 @@
 - [ ] Revisar placing
 - [x] Background for nav
 - [ ] Eliminate button fot mobile
-- [ ] Burger menu for mobile
+- [x] Burger menu
 
 # MERCA's design file:
 https://www.figma.com/file/COq1i5OsGOpzLNuQxgJl7m/Manuel-projectbeta?node-id=50%3A95
