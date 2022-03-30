@@ -18,30 +18,30 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="no-print">
         <a href="../html/home.html" class="logo top-bar">MERCA</a>
-            <div class="menu-wrap">
-                <input class="toggler" type="checkbox">
-                <div class="burger">
-                    <div></div>
-                </div>
-                <div class="menu">
-                    <ul class="top-bar">
-                        <li><a href="../html/home.html" class="top-bar">Inicio</a></li>
-                        <li class="top-bar-item"><a href="../html/presupuesto.html"
-                                class="top-bar  in-page">Presupuesto</a></li>
-                        <li class="top-bar-item"><a href="../html/proyectos.html" class="top-bar">Proyectos</a></li>
-                        <li class="top-bar-item"><a href="../html/home.html#contact" class="top-bar">Contacto</a></li>
-                    </ul>
-                </div>
-
+        <div class="menu-wrap">
+            <input class="toggler" type="checkbox">
+            <div class="burger">
+                <div></div>
             </div>
+            <div class="menu">
+                <ul class="top-bar">
+                    <li><a href="../html/home.html" class="top-bar">Inicio</a></li>
+                    <li class="top-bar-item"><a href="../html/presupuesto.html" class="top-bar  in-page">Presupuesto</a>
+                    </li>
+                    <li class="top-bar-item"><a href="../html/proyectos.html" class="top-bar">Proyectos</a></li>
+                    <li class="top-bar-item"><a href="../html/home.html#contact" class="top-bar">Contacto</a></li>
+                </ul>
+            </div>
+
+        </div>
     </nav>
     <h3 class="pop presu-header thin-section">Tu presupuesto a medida</h3>
     <section class="presu-item thin-section">
-        <h2 class="presu-title">Camisetas</h2>
+        <h2 class="presu-title" id="Camisetas">Camisetas</h2>
         <div class="presu-item-bar"></div>
-        <div class="presu-item-hide">
+        <div class="presu-item-hide" id="hide-Camisetas">
             <p class="bold">Técnica</p>
             <form>
                 <input type="radio" class="radio" id="serigrafia" name="camisetas" value="serigrafia">
@@ -52,13 +52,12 @@
             <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-camiseta"></p>
             <p>* las tallas se distribuiran de forma equitativa de XS a XL, si deseas especificarlas, contáctanos.
             </p>
-            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2 class="presu-title">Pegatinas</h2>
+        <h2 class="presu-title" id="Pegatinas">Pegatinas</h2>
         <div class="presu-item-bar"></div>
-        <div class="presu-item-hide">
+        <div class="presu-item-hide" id="hide-Pegatinas">
             <p class="bold">Cantidad</p>
             <form>
                 <input type="radio" class="radio" id="500" name="pegatinas" value="500">
@@ -68,76 +67,60 @@
                 <input type="radio" class="radio" id="1500" name="pegatinas" value="1500">
                 <label class="presu" for="1500">1500</label>
             </form>
-            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2 class="presu-title">Totes</h2>
+        <h2 class="presu-title" id="Totes">Totes</h2>
         <div class="presu-item-bar"></div>
-        <div class="presu-item-hide">
+        <div class="presu-item-hide" id="hide-Totes">
             <p class="bold">Técnica</p>
             <form>
-                <input type="radio" class="radio" id="serigrafia" name="totes" value="serigrafia-tote">
-                <label class="presu" for="serigrafia">Serigrafía</label>
-                <input type="radio" class="radio" id="vinilo-tote" name="totes" value="vinilo">
-                <label class="presu" for="vinilo">Vinilo</label>
+                <input type="radio" class="radio" id="serigrafia-tote" name="totes" value="serigrafia-tote">
+                <label class="presu" for="serigrafia-tote">Serigrafía</label>
+                <input type="radio" class="radio" id="vinilo-tote" name="totes" value="vinilo-tote">
+                <label class="presu" for="vinilo-tote">Vinilo</label>
             </form>
             <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-tote"></p>
-            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2 class="presu-title">Poster</h2>
+        <h2 class="presu-title" id="Poster">Poster</h2>
         <div class="presu-item-bar"></div>
-        <div class="presu-item-hide">
+        <div class="presu-item-hide" id="hide-Poster">
             <p class="bold">Tamaño</p>
             <form>
-                <input type="radio" class="radio" id="a5" name="poster-size" value="a5">
-                <label class="presu" for="a5">A5</label>
                 <input type="radio" class="radio" id="a4" name="poster-size" value="a4">
                 <label class="presu" for="a4">A4</label>
                 <input type="radio" class="radio" id="a3" name="poster-size" value="a3">
                 <label class="presu" for="a3">A3</label>
                 <input type="radio" class="radio" id="a2" name="poster-size" value="a2">
                 <label class="presu" for="a2">A2</label>
-                <input type="radio" class="radio" id="a1" name="poster-size" value="a1">
-                <label class="presu" for="a1">A1</label>
             </form>
-            <p class="bold">Color</p>
-            <form>
-                <input type="radio" class="radio" id="byn" name="poster-color" value="byn">
-                <label class="presu" for="byn">Blanco y negro</label>
-                <input type="radio" class="radio" id="color" name="poster-color" value="color">
-                <label class="presu" for="color">Color</label>
-            </form>
-            <p class="bold">Cantidad <input type="text" class="presu"></p>
-            <button class="link-in-text bold pop closer">Cerrar</button>
+            <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-poster"></p>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2 class="presu-title">Chapas</h2>
+        <h2 class="presu-title" id="Chapas">Chapas</h2>
         <div class="presu-item-bar"></div>
-        <div class="presu-item-hide">
+        <div class="presu-item-hide" id="hide-Chapas">
             <p class="bold">Tamaño (diametro en cm)</p>
             <form>
-                <input type="radio" class="radio" id="5" name="chapas" value="5">
-                <label class="presu" for="5">5</label>
-                <input type="radio" class="radio" id="7" name="chapas" value="7">
-                <label class="presu" for="7">7</label>
-                <input type="radio" class="radio" id="10" name="chapas" value="5">
-                <label class="presu" for="10">10</label>
+                <input type="radio" class="radio" id="five" name="chapas" value="five">
+                <label class="presu" for="five">5</label>
+                <input type="radio" class="radio" id="seven" name="chapas" value="seven">
+                <label class="presu" for="seven">7</label>
+                <input type="radio" class="radio" id="ten" name="chapas" value="ten">
+                <label class="presu" for="ten">10</label>
             </form>
-            <p class="bold">Cantidad <input type="text" class="presu"></p>
-            <button class="link-in-text bold pop closer">Cerrar</button>
+            <p class="bold">Cantidad <input type="text" class="presu" id="cantidad-chapas"></p>
         </div>
     </section>
     <section class="presu-item thin-section">
-        <h2 class="presu-title">Otro</h2>
+        <h2 class="presu-title" id="Otro">Otro</h2>
         <div class="presu-item-bar"></div>
-        <div class="presu-item-hide">
+        <div class="presu-item-hide" id="hide-Otro">
             <p class="bold">¿Necesitas algo más? Cuéntanoslo.</p>
             <input type="text presu-item-otro">
-            <button class="link-in-text bold pop closer">Cerrar</button>
         </div>
     </section>
     <section class="presu-eraser">
@@ -148,11 +131,12 @@
     <section class="presu-result thin-section">
         <h3 class="presu-result-title">Total <span id="final-result" class="pop">0</span> €</h3>
         <button href="" class="boton-hard no-print" onclick="updateResult()">CALCULAR</button>
+        <a href="" class="boton-mid no-print">HACER PEDIDO</a>
         <a href="" class="boton-soft-black no-print" onclick="window.print();return false;" type="text/css"
-            media="print">DESCARGAR
-            .PDF</a>
+            media="print">DESCARGAR .PDF</a>
     </section>
     <script src="../scripts/calculator.js"></script>
+    <script src="../scripts/class-adder-presu.js"></script>
     <footer class="grid no-print">
         <p id="contact" class="footer row">¿Dudas? <a href="../html/home.html#contact"
                 class="link-in-text footer">Contáctanos.</a></p>

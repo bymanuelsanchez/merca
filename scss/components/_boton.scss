@@ -3,6 +3,7 @@
     padding: 6px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 10px;
     border: $border solid $black;
     border-radius: 100px;
     transition: $tran-time;
@@ -17,6 +18,30 @@
     color: $white;
 }
 
+.boton-mid{
+    background-color: $dark-pink;
+    font-size: 20px;
+    color: $black;
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    border: $border solid $dark-pink;
+    border-radius: 100px;
+    transition: $tran-time;
+}
+.boton-mid:hover{
+    background-color: $black;
+    border: $border solid $black;
+    color: $white;
+}
+.boton-mid:active{
+    background-color: $pop;
+    border: $border solid $pop;
+    color: $white;
+}
+
+
 
 .boton-hard{
     background-color: $pop;
@@ -24,6 +49,7 @@
     padding: 6px;
     padding-left: 10px;
     padding-right: 10px;
+    margin-right: 10px;
     border: $border solid $pop;
     border-radius: 100px;
     transition: $tran-time;

@@ -14,15 +14,18 @@
 - [x] Add inner page movement *preguntar Diego por DOWN
 - [x] Arreglar grid
 - [x] Add JS presupuesto
-- [ ] Add JS presupuesto add class
-- [ ] Add JS pro-card
 - [x] @media print
-- [ ] copy (Change lorem for real info)
 - [x] Linkear los botones de Proyectos
-- [ ] Revisar placing
 - [x] Background for nav
-- [ ] Eliminate button fot mobile
+- [x] Eliminate button fot mobile
 - [x] Burger menu
+- [x] Add JS presupuesto add class
+- [x] Full working JS
+- [ ] Add JS pro-card
+- [ ] copy (Change lorem for real info)
+- [ ] Revisar placing
+- [ ] revisar procards
+
 
 # MERCA's design file:
 https://www.figma.com/file/COq1i5OsGOpzLNuQxgJl7m/Manuel-projectbeta?node-id=50%3A95

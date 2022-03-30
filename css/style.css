@@ -43,6 +43,7 @@ a.top-bar.logo {
   padding-right: 6px;
   font-size: 25px;
   color: #222222;
+  z-index: 1000;
 }
 
 .top-bar {
@@ -183,8 +184,13 @@ body .content p {
 }
 
 /* BURGER adjustments*/
-div.burger, .toggler {
+div.burger {
   left: -4.9em;
+  top: -0.1em;
+}
+
+.toggler {
+  left: -4.2em;
   top: -0.1em;
 }
 
@@ -197,9 +203,8 @@ li {
 }
 
 a.top-bar {
-  font-size: 150px;
+  font-size: 50px;
   margin-top: 0px;
-  left: -100px !important;
   color: #FFFFFF;
 }
 
@@ -211,6 +216,11 @@ a.top-bar:hover {
   color: #FA4C4B !important;
 }
 
+@media all and (min-width: 650px) {
+  a.top-bar {
+    font-size: 150px;
+  }
+}
 html {
   background-color: #FFEBF5;
   font-family: "Archivo", sans-serif;
@@ -319,6 +329,7 @@ h5 {
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-right: 10px;
   border: 1px solid #222222;
   border-radius: 100px;
   -webkit-transition: 0.2s;
@@ -336,12 +347,39 @@ h5 {
   color: #FFFFFF;
 }
 
+.boton-mid {
+  background-color: #F1AFD0;
+  font-size: 20px;
+  color: #222222;
+  padding: 6px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 10px;
+  border: 1px solid #F1AFD0;
+  border-radius: 100px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.boton-mid:hover {
+  background-color: #222222;
+  border: 1px solid #222222;
+  color: #FFFFFF;
+}
+
+.boton-mid:active {
+  background-color: #FA4C4B;
+  border: 1px solid #FA4C4B;
+  color: #FFFFFF;
+}
+
 .boton-hard {
   background-color: #FA4C4B;
   color: #FFFFFF;
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-right: 10px;
   border: 1px solid #FA4C4B;
   border-radius: 100px;
   -webkit-transition: 0.2s;
@@ -531,7 +569,7 @@ input[type=text].presu-item-otro {
 }
 
 .img {
-  background-color: #F1AFD0;
+  background-color: #FA4C4B;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -575,6 +613,7 @@ input[type=text].presu-item-otro {
 /* móvil */
 .pro-card {
   margin-top: 20px;
+  margin-bottom: 20px;
   padding-bottom: 33px;
   background-color: #FFFFFF;
   border: 1px solid #222222;
@@ -585,6 +624,8 @@ input[type=text].presu-item-otro {
   height: 250px;
   border-radius: 10px 10px 0px 0px;
   border-bottom: 1px solid #222222;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .pro-card-info {
@@ -611,12 +652,13 @@ input[type=text].presu-item-otro {
 
 .pro-card-link {
   position: relative;
+  float: right;
 }
 
 @media all and (min-width: 650px) {
   .thin-section {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12%;
+    padding-right: 12%;
   }
 
   .pro-card {
@@ -641,10 +683,15 @@ input[type=text].presu-item-otro {
 
   .pro-card-link {
     float: right;
-    -ms-flex-line-pack: end;
-        align-content: flex-end;
+    margin-top: 40px;
   }
 }
+/* for JS*/
+.pro-card-img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,5 +1016,14 @@ h1.landing-logo {
 
   input[type=radio]:checked {
     background-color: #222222;
+  }
+}
+.desk {
+  display: none;
+}
+
+@media all and (min-width: 650px) {
+  .desk {
+    display: inline;
   }
 }

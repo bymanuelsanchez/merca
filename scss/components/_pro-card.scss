@@ -7,6 +7,7 @@
 
 .pro-card{
     margin-top: 20px;
+    margin-bottom: 20px;
     padding-bottom: 33px;
     background-color: $white;
     border: $border solid $black;
@@ -17,6 +18,7 @@
     height: 250px;
     border-radius: $radius $radius 0px 0px;
     border-bottom: $border solid $black;
+    transition: $tran-time;
 }
 
 .pro-card-info{
@@ -37,14 +39,14 @@
 
 .pro-card-link{
     position: relative;
-    
+    float: right;
 }
 
 
 @media all and (min-width: $desk){
     .thin-section{
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 12%;
+        padding-right: 12%;
     }
     .pro-card{
         padding-bottom: 0%;
@@ -61,6 +63,18 @@
     }
     .pro-card-link{
         float: right;
-        align-content: flex-end;
+        margin-top: 40px;
     }
+}
+
+
+
+
+
+
+
+/* for JS*/
+.pro-card-img:hover{
+    cursor: pointer;
+    opacity: .8;
 }

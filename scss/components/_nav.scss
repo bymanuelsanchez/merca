@@ -14,6 +14,7 @@ a.top-bar.logo{
     padding-right: 6px;
     font-size: 25px;
     color: $black;
+    z-index: 1000;
 }
 .top-bar{
     list-style:none;
@@ -152,10 +153,15 @@ body {
 
 /* BURGER adjustments*/
 
-div.burger, .toggler{
+div.burger{
     left: -4.9em;
     top: -.1em;
 }
+.toggler{
+  left: -4.2em;
+  top: -.1em;
+}
+
 div.burger:hover, .toggler:hover{
     color: $pop;
 }
@@ -164,9 +170,8 @@ li{
     margin-top: 0em;
 }
 a.top-bar{
-    font-size: 150px;
+    font-size: 50px;
     margin-top: 0px;
-    left: -100px !important;
     color: $white;
 }
 a.top-bar:hover{
@@ -175,4 +180,9 @@ a.top-bar:hover{
 .in-page{
     color: $pop !important;
 }
-  
+
+@media all and (min-width: $desk){
+  a.top-bar{
+    font-size: 150px;
+  }
+}

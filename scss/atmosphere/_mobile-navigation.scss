@@ -1,0 +1,9 @@
+.desk{
+    display: none;
+}
+
+@media all and (min-width: $desk){
+    .desk{
+        display: inline;
+    }
+}
