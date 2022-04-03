@@ -109,7 +109,7 @@ body .content p {
   top: 0;
   left: 0;
   width: 100%;
-  height: 3px;
+  height: 3.5px;
   background: #222222;
 }
 .burger > div::before, .burger > div::after {
@@ -118,7 +118,7 @@ body .content p {
   display: block;
   content: "";
   width: 100%;
-  height: 3px;
+  height: 3.5px;
 }
 .burger > div::before {
   top: -11px;
@@ -327,6 +327,7 @@ h5 {
 .boton-soft-black {
   background-color: transparent;
   padding: 6px;
+  font-size: auto;
   padding-left: 10px;
   padding-right: 10px;
   margin-right: 10px;
@@ -349,7 +350,7 @@ h5 {
 
 .boton-mid {
   background-color: #F1AFD0;
-  font-size: 20px;
+  font-size: auto;
   color: #222222;
   padding: 6px;
   padding-left: 10px;
@@ -376,6 +377,7 @@ h5 {
 .boton-hard {
   background-color: #FA4C4B;
   color: #FFFFFF;
+  font-size: auto;
   padding: 6px;
   padding-left: 10px;
   padding-right: 10px;
@@ -577,6 +579,11 @@ input[type=text].presu-item-otro {
   margin-right: auto;
 }
 
+.pro-card-img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 .landing-img {
   background-image: url(../../recursos/landing.png);
 }
@@ -602,6 +609,30 @@ input[type=text].presu-item-otro {
 }
 
 .banda-6 {
+  background-image: url(../../recursos/aliaga.png);
+}
+
+.banda-1-active {
+  background-image: url(../../recursos/mateo2.jpeg);
+}
+
+.banda-2-active {
+  background-image: url(../../recursos/amarillo2.png);
+}
+
+.banda-3-active {
+  background-image: url(../../recursos/meseta2.jpeg);
+}
+
+.banda-4-active {
+  background-image: url(../../recursos/diego2.jpeg);
+}
+
+.banda-5-active {
+  background-image: url(../../recursos/sonido2.png);
+}
+
+.banda-6-active {
   background-image: url(../../recursos/aliaga.png);
 }
 
@@ -653,6 +684,12 @@ input[type=text].presu-item-otro {
 .pro-card-link {
   position: relative;
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 @media all and (min-width: 650px) {
@@ -682,16 +719,9 @@ input[type=text].presu-item-otro {
   }
 
   .pro-card-link {
-    float: right;
     margin-top: 40px;
   }
 }
-/* for JS*/
-.pro-card-img:hover {
-  cursor: pointer;
-  opacity: 0.8;
-}
-
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -769,18 +799,6 @@ h1.landing-logo {
   margin-bottom: 0.5em;
 }
 
-/* transition gradient */
-.transition-gradient {
-  position: relative;
-  height: 2em;
-  width: calc(100vw + 1em);
-  left: -1em;
-  top: 2.3em;
-  /*border: $border solid $black;*/
-  background: -webkit-gradient(linear, left bottom, left top, from(#FFEBF5), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, #FFEBF5 0%, rgba(0, 0, 0, 0) 100%);
-}
-
 /* serv */
 .serv {
   margin-top: 7em;
@@ -802,9 +820,18 @@ h1.landing-logo {
   display: none;
 }
 
+h4.serv-item-number {
+  margin: 0%;
+}
+
 /* pres */
 .pres {
   margin-top: 0em;
+}
+
+.pres-text {
+  position: relative;
+  top: -1.5em;
 }
 
 /* pro */
@@ -838,8 +865,10 @@ h1.landing-logo {
 
 /* contact */
 .contact {
-  margin-top: 10em;
-  margin-bottom: 12em;
+  margin-top: 5em;
+  margin-bottom: 0em;
+  position: relative;
+  top: 3em;
 }
 
 .newsletter {
@@ -865,7 +894,13 @@ h1.landing-logo {
 }
 
 .presu-eraser {
-  margin-top: -2em;
+  position: relative;
+  top: 1em;
+}
+
+a.boton-soft-black.no-print {
+  position: relative;
+  top: 1em;
 }
 
 /*------PROYECTOS------*/
@@ -881,6 +916,11 @@ h1.landing-logo {
 
 .pro-bottom-title {
   margin-bottom: 0.5em;
+}
+
+a.boton-soft-black.pro {
+  position: relative;
+  top: 1.5em;
 }
 
 /*----------
@@ -901,20 +941,18 @@ h1.landing-logo {
 
   /* serv */
   .serv {
-    margin-top: 35vh;
+    margin-top: 45vh;
     padding-left: 3vw;
-  }
-
-  .serv-item-2 {
-    margin-top: 5vh;
-  }
-
-  .serv-item-3 {
-    margin-top: calc(2 * 5vh);
   }
 
   .serv-item-text {
     width: 85%;
+  }
+
+  .serv-link {
+    position: relative;
+    top: 10vh;
+    margin-left: 5vw;
   }
 
   /* pres */
@@ -964,6 +1002,7 @@ h1.landing-logo {
   /* contact */
   .contact {
     margin-top: 30vh;
+    margin-bottom: 30vh;
   }
 
   .blank {
@@ -971,6 +1010,12 @@ h1.landing-logo {
     width: 100px;
     margin-bottom: 5vh;
     margin-top: 10vh;
+  }
+
+  /*------PRESUPUESTO------*/
+  a.boton-soft-black.no-print {
+    position: relative;
+    top: 0em;
   }
 
   /*------PROYECTOS------*/

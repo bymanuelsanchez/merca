@@ -1,6 +1,7 @@
 .boton-soft-black{
     background-color: transparent;
     padding: 6px;
+    font-size: auto;
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 10px;
@@ -20,7 +21,7 @@
 
 .boton-mid{
     background-color: $dark-pink;
-    font-size: 20px;
+    font-size: auto;
     color: $black;
     padding: 6px;
     padding-left: 10px;
@@ -46,6 +47,7 @@
 .boton-hard{
     background-color: $pop;
     color: $white;
+    font-size: auto;
     padding: 6px;
     padding-left: 10px;
     padding-right: 10px;

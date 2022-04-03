@@ -1,0 +1,262 @@
+/*----------
+    
+    MOBILE
+
+----------*/
+
+
+/*------HOME------*/
+
+/* landing */
+section.landing{
+    z-index: 1000;
+}
+.landing-img{
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: calc(100vw + 1em);
+    left: -1em;
+    top: 0;
+}
+h1.landing-logo{
+    position: relative;
+    color: $black;
+    font-size: 27.5vw;
+    left: -.08em;
+    top: .1em;
+    margin: 0;
+}
+.landing-text{
+    margin-top: 8em;
+    margin-bottom: .5em;
+}
+
+/* serv */
+.serv{
+    margin-top: 7em;
+}
+.serv-item{
+    margin-bottom: 3em;
+}
+.serv-item-title{
+    margin-bottom: 0em;
+}
+.serv-item-text{
+    margin-top: 1em;
+}
+.serv-item-link{
+    display: none;
+}
+h4.serv-item-number{
+    margin: 0%;
+}
+
+/* pres */
+.pres{
+    margin-top: 0em;
+}
+.pres-text{
+    position: relative;
+    top: -1.5em;
+}
+
+/* pro */
+.pro{
+    margin-top: 4em;
+}
+.pro-title{
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+.pro-text{
+    margin-top: 1.4em;
+    margin-bottom: 2em;
+}
+
+/* faq */
+.faq{
+    margin-top: 4em;
+}
+.faq-item-title{
+    margin-top: 2em;
+    margin-bottom: 0em;
+}
+.faq-item-text{
+    margin-top: .5em;
+}
+
+/* contact */
+.contact{
+    margin-top: 5em;
+    margin-bottom: 0em;
+    position: relative;
+    top: 3em;
+}
+.newsletter{
+    margin-top: 4em;
+}
+
+
+/*------PRESUPUESTO------*/
+.presu-header{
+    margin-top: 3em;
+    margin-bottom: 2em;
+}
+.presu-item-hide:last-child{
+    margin-bottom: 4em;
+}
+.presu-result{
+    margin-top: 6em;
+}
+.presu-result-title{
+    margin-bottom: .5em;
+}
+.presu-eraser{
+    position: relative;
+    top: 1em;
+}
+a.boton-soft-black.no-print{
+    position: relative;
+    top: 1em;
+}
+
+
+/*------PROYECTOS------*/
+.pro-intro{
+    margin-top: 7em;
+    margin-bottom: 4em;
+}
+.pro-bottom{
+    margin-top: 7em;
+    margin-bottom: 10em;
+}
+.pro-bottom-title{
+    margin-bottom: .5em;
+}
+a.boton-soft-black.pro{
+    position: relative;
+    top: 1.5em;
+}
+
+
+
+/*----------
+    
+    DESK
+
+----------*/
+
+@media all and (min-width: $desk){
+    /*------HOME------*/
+
+    /* landing */
+    h1.landing-logo{
+        top: -5vh;
+    }
+    .landing-text{
+        margin-top: -15vh;
+    }
+
+    /* serv */
+    .serv{
+        margin-top: 45vh;
+        padding-left: 3vw;
+    }
+    .serv-item-text{
+        width: 85%;
+    }
+    .serv-link{
+        position: relative;
+        top: 10vh;
+        margin-left: 5vw;
+    }
+
+    /* pres */
+    .pres{
+        margin-top: 20vh;
+        margin-bottom: 30vh;
+    }
+    .pres-text{
+        width: 50vw;
+        margin-bottom: 6vh;
+    }
+
+    /* pro */
+    .pro{
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+    }
+    .pro-text{
+        margin-top: 51vh;
+        width: 85%;
+    }
+    .pro-title{
+        margin-top: 8vh;
+    }
+
+
+    /* faq */
+    .faq{
+        margin-top: -30vh;
+    }
+    .faq-title{
+        margin-top: -10vh;
+        width: 10%;
+    }
+    .faq-item-text{
+
+        width: 85%;
+    }
+    .faq-items{
+        margin-top: 15vh;
+    }
+
+    /* contact */
+    .contact{
+        margin-top: 30vh;
+        margin-bottom: 30vh;
+    }
+
+    .blank{
+        height: 180px;
+        width: 100px;
+        margin-bottom: 5vh;
+        margin-top: 10vh;
+    }
+
+    /*------PRESUPUESTO------*/
+    a.boton-soft-black.no-print{
+        position: relative;
+        top: 0em;
+    }
+
+    /*------PROYECTOS------*/
+    
+    /* intro */
+    .pro-intro-title{
+        margin-top: 20vh;
+    }
+    .blank-pro{
+        height: 90px;
+        width: 100px;
+        margin-bottom: 5vh;
+        margin-top: 10vh;
+    }
+
+    /* contact */
+    .pro-bottom-title{
+        width: 60%;
+    }
+
+    /* contact */
+    .pro-bottom{
+        margin-top: 40vh;
+        margin-bottom: 40vh;
+    }
+    .pro-bottom-title{
+        width: 50%;
+    }
+
+    
+}

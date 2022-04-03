@@ -40,6 +40,8 @@
 .pro-card-link{
     position: relative;
     float: right;
+    display: flex;
+    align-items: flex-end;
 }
 
 
@@ -62,7 +64,6 @@
         padding: 1.5em;
     }
     .pro-card-link{
-        float: right;
         margin-top: 40px;
     }
 }
@@ -73,8 +74,3 @@
 
 
 
-/* for JS*/
-.pro-card-img:hover{
-    cursor: pointer;
-    opacity: .8;
-}

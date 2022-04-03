@@ -7,11 +7,24 @@
     margin-right: auto;
 }
 
+.pro-card-img:hover{
+    cursor: pointer;
+    opacity: .5;
+}
 
 .landing-img{background-image: url(../../recursos/landing.png);}
+
 .banda-1{background-image: url(../../recursos/mateo.png);}
 .banda-2{background-image: url(../../recursos/amarillo.png);}
 .banda-3{background-image: url(../../recursos/meseta.jpg);}
 .banda-4{background-image: url(../../recursos/diego.jpeg);}
 .banda-5{background-image: url(../../recursos/sonido.jpeg);}
 .banda-6{background-image: url(../../recursos/aliaga.png);}
+
+.banda-1-active{background-image: url(../../recursos/mateo2.jpeg);}
+.banda-2-active{background-image: url(../../recursos/amarillo2.png);}
+.banda-3-active{background-image: url(../../recursos/meseta2.jpeg);}
+.banda-4-active{background-image: url(../../recursos/diego2.jpeg);}
+.banda-5-active{background-image: url(../../recursos/sonido2.png);}
+.banda-6-active{background-image: url(../../recursos/aliaga.png);}
+

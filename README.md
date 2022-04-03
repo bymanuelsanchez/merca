@@ -10,8 +10,8 @@
 - [x] Placing desk home
 - [x] Placing desk presupuesto
 - [x] Placing desk proyectos
-- [x] Add link to buttons *remember target=blank
-- [x] Add inner page movement *preguntar Diego por DOWN
+- [x] Add link to buttons
+- [x] Add inner page movement
 - [x] Arreglar grid
 - [x] Add JS presupuesto
 - [x] @media print
@@ -21,10 +21,10 @@
 - [x] Burger menu
 - [x] Add JS presupuesto add class
 - [x] Full working JS
-- [ ] Add JS pro-card
-- [ ] copy (Change lorem for real info)
-- [ ] Revisar placing
-- [ ] revisar procards
+- [x] copy (Change lorem for real info)
+- [x] Add JS pro-card
+- [x] Revisar placing
+- [x] revisar procards
 
 
 # MERCA's design file:
