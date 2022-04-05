@@ -918,11 +918,6 @@ a.boton-soft-black.no-print {
   margin-bottom: 0.5em;
 }
 
-a.boton-soft-black.pro {
-  position: relative;
-  top: 1.5em;
-}
-
 /*----------
 
     DESK
@@ -1044,11 +1039,6 @@ a.boton-soft-black.pro {
 
   .pro-bottom-title {
     width: 50%;
-  }
-
-  a.boton-soft-black.pro {
-    position: relative;
-    top: 0em;
   }
 }
 @media print {
